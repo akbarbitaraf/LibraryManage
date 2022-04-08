@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations; 
 using System.ComponentModel.DataAnnotations.Schema; 
-namespace Library.Entities.DB
+namespace LibraryManage.Entities.DB
 {
     public class MembersStatus
     {

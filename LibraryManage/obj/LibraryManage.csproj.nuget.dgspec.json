@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\ProjectMyself\\LibraryManage\\LibraryManage\\LibraryManage.csproj": {}
+    "C:\\Users\\Bitaraf.Eng\\Documents\\GitHub\\LibraryManage\\LibraryManage\\LibraryManage.csproj": {}
   },
   "projects": {
-    "G:\\ProjectMyself\\LibraryManage\\LibraryManage\\LibraryManage.csproj": {
+    "C:\\Users\\Bitaraf.Eng\\Documents\\GitHub\\LibraryManage\\LibraryManage\\LibraryManage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\ProjectMyself\\LibraryManage\\LibraryManage\\LibraryManage.csproj",
+        "projectUniqueName": "C:\\Users\\Bitaraf.Eng\\Documents\\GitHub\\LibraryManage\\LibraryManage\\LibraryManage.csproj",
         "projectName": "LibraryManage",
-        "projectPath": "G:\\ProjectMyself\\LibraryManage\\LibraryManage\\LibraryManage.csproj",
+        "projectPath": "C:\\Users\\Bitaraf.Eng\\Documents\\GitHub\\LibraryManage\\LibraryManage\\LibraryManage.csproj",
         "packagesPath": "C:\\Users\\Bitaraf.Eng\\.nuget\\packages\\",
-        "outputPath": "G:\\ProjectMyself\\LibraryManage\\LibraryManage\\obj\\",
+        "outputPath": "C:\\Users\\Bitaraf.Eng\\Documents\\GitHub\\LibraryManage\\LibraryManage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

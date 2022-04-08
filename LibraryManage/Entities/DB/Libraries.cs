@@ -7,7 +7,7 @@ namespace LibraryManage.Entities.DB
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int Library_ID { get; set; }
         [Required]
         [StringLength(100)]
         public string Title { get; set; }

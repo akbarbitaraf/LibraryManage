@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema; 
-namespace Library.Entities.DB
+namespace LibraryManage.Entities.DB
 {
     public class Members
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int Member_ID { get; set; }
         public DateTime? CreatedDate { get; set;}
         public DateTime? UpdatedDate { get; set;} = DateTime.Now;
         [Required]
@@ -25,6 +25,7 @@ namespace Library.Entities.DB
         public MembersStatus MembersStatus { get; set; }
         [ForeignKey("MemberAttachment_ID")]
         public MembersAttachment MembersAttachment { get; set; }
+
 
     }
 }
