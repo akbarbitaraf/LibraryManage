@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LibraryManage.Entities.DB
 {
-    public class Books_In_shelfs
+    public class Books_In_Shelfs
     {
         [Key]
         [Required]

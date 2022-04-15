@@ -12,7 +12,7 @@ namespace LibraryManage.Entities.DB
         [ForeignKey("BookLoanStatus_ID")]
         public BooksLoansStatus BooksLoansStatus { get; set; }  
         [ForeignKey("BooksInShelf_ID")]
-        public Books_In_shelfs Books_In_Shelfs { get; set; }
+        public Books_In_Shelfs Books_In_Shelfs { get; set; }
         [ForeignKey("Member_ID")]
         public Members Members { get; set; }
         public int? MulcCurrentDelay { get; set; }
