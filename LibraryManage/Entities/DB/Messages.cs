@@ -12,6 +12,7 @@ namespace LibraryManage.Entities.DB
         public string Text { get; set; }
         public BookLoans IsSend { get; set; }   
         public DateTime SendDate { get; set; }
+        public int? Member_ID { get; set; }  
 
         [ForeignKey("Member_ID")]
         public Members Members { get; set; }

@@ -11,6 +11,7 @@ namespace LibraryManage.Entities.DB
         public int Area_ID { get; set; }
         [StringLength(50)]
         public string Title { get; set; }
+        public int? Library_ID { get; set; }
         [ForeignKey("Library_ID")]
         public Libraries Libraries { get; set; }
 

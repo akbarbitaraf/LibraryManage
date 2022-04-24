@@ -6,7 +6,7 @@ namespace LibraryManage.Entities.DB
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string MemberAttachment_ID { get; set; }
+        public int MemberAttachment_ID { get; set; }
         public byte MASelfImage { get; set; }
         public byte MASelfBirthCertificate { get; set;  }
         public byte MASelfNationalCertificate { get; set; }

@@ -57,3 +57,5 @@ C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\obj\Debug\net6
 C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\obj\Debug\net6.0\ref\LibraryManage.dll
 C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\obj\Debug\net6.0\LibraryManage.pdb
 C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\obj\Debug\net6.0\LibraryManage.genruntimeconfig.cache
+C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

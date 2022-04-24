@@ -13,6 +13,7 @@ namespace LibraryManage.Entities.DB
         public int AllowedLoanDays { get; set; }    
         public int AllowedLoanNumberBook { get; set; }  
         public decimal MulctDelayOneDayPrice { get; set; }
+        public int? Library_ID { get; set; } 
         [ForeignKey("Library_ID")] 
         public Libraries Libraries { get; set; }    
 
