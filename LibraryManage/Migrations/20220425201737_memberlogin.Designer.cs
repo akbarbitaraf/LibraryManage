@@ -4,6 +4,7 @@ using LibraryManage.Entities.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryManage.Migrations
 {
     [DbContext(typeof(LibraryManageContext))]
-    partial class LibraryManageContextModelSnapshot : ModelSnapshot
+    [Migration("20220425201737_memberlogin")]
+    partial class memberlogin
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -391,38 +393,6 @@ namespace LibraryManage.Migrations
                     b.ToTable("Libraries");
                 });
 
-            modelBuilder.Entity("LibraryManage.Entities.DB.MemberLogin", b =>
-                {
-                    b.Property<int>("MemberLogin_ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MemberLogin_ID"), 1L, 1);
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Member_ID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("MemberLogin_ID");
-
-                    b.HasIndex("Member_ID");
-
-                    b.ToTable("MemberLogins");
-                });
-
             modelBuilder.Entity("LibraryManage.Entities.DB.Members", b =>
                 {
                     b.Property<int>("Member_ID")
@@ -793,17 +763,6 @@ namespace LibraryManage.Migrations
                     b.Navigation("EmployeesRoles");
 
                     b.Navigation("EmployeesStatus");
-                });
-
-            modelBuilder.Entity("LibraryManage.Entities.DB.MemberLogin", b =>
-                {
-                    b.HasOne("LibraryManage.Entities.DB.Members", "Members")
-                        .WithMany()
-                        .HasForeignKey("Member_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Members");
                 });
 
             modelBuilder.Entity("LibraryManage.Entities.DB.Members", b =>

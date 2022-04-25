@@ -30,6 +30,7 @@ namespace LibraryManage.Entities.Context
         public DbSet<Transactions> Transactions { get; set; }       
         public DbSet<TransactionsTypes> TransactionsTypes { get; set; } 
         public DbSet<Translators> Translators { get; set; } 
+        public DbSet<MemberLogin> MemberLogins { get; set; }
 
     }
 }
