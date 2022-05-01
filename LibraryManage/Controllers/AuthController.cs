@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using LibraryManage.Contract.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,9 +10,10 @@ namespace LibraryManage.Controllers
     //[Authorize(Roles ="Memmber")]
     public class AuthController : Controller
     {
-        public AuthController()
+        private readonly IRepositoryManager _repositoryManager;
+        public AuthController(IRepositoryManager repositoryManager)
         {
-
+            _repositoryManager = repositoryManager;
         }
         [HttpPost("login")]
         [AllowAnonymous]
