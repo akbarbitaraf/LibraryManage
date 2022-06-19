@@ -1,24 +1,28 @@
 ﻿using LibraryManage.Contract.IServices;
+using LibraryManage.Entities.DTO;
+using LibraryManage.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryManage.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    //[Authorize(Roles = "Members")]
+    [Route("api/[controller]")]
     //[Authorize(Roles ="Memmber")]
     public class AuthController : Controller
     {
-        public AuthController(IRepositoryManager repositoryManager)
+        private IAuthService _authService; 
+        public AuthController(IAuthService authService)
         {
-            //_repositoryManager = repositoryManager;
+            this._authService = authService; 
         }
-        [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(string returnUrl)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] MemberLoginReq returnUrl)
         {
-            //var result = _repositoryManager.MemberLogin.create();
+            var result =await _authService.Login(returnUrl);
  
             return Ok(returnUrl);
         }

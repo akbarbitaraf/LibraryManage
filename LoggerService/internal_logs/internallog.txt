@@ -1,0 +1,1944 @@
+2022-05-31 23:02:16.5118 Info Message Template Auto Format enabled
+2022-05-31 23:02:16.5415 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 23:02:16.6111 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 23:02:16.6111 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:02:16.6111 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:02:16.6251 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:02:16.6251 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:02:16.6251 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:02:16.6251 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:02:16.6251 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:02:16.6251 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:02:16.6251 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:02:16.6251 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:02:16.6251 Info Adding target FileTarget(Name=logfile)
+2022-05-31 23:02:16.6251 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 23:02:16.6251 Trace ParseRulesElement
+2022-05-31 23:02:16.6494 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-05-31 23:02:16.6494 Debug --- NLog configuration dump ---
+2022-05-31 23:02:16.6494 Debug Targets:
+2022-05-31 23:02:16.6494 Debug FileTarget(Name=logfile)
+2022-05-31 23:02:16.6494 Debug Rules:
+2022-05-31 23:02:16.6555 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 23:02:16.6555 Debug --- End of NLog configuration dump ---
+2022-05-31 23:02:16.6555 Trace FindReachableObject<System.Object>:
+2022-05-31 23:02:16.6555 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 23:02:16.6555 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 23:02:16.6555 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:02:16.6555 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:02:16.6555 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:02:16.6555 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:02:16.6555 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6555 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:02:16.6555 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6555 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:02:16.6555 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:02:16.6555 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:02:16.6555 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:02:16.6701 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6701 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:02:16.6701 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6701 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:02:16.6701 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:02:16.6701 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 23:02:16.6701 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 23:02:16.6701 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-05-31 23:02:16.6701 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 23:02:16.6701 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 23:02:16.6701 Trace Initializing Layout Renderer: ${message}
+2022-05-31 23:02:16.6701 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:02:16.6701 Trace Initializing Layout Renderer: ${level}
+2022-05-31 23:02:16.6701 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:02:16.6701 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 23:02:16.6701 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 23:02:16.6860 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:02:16.6860 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:02:16.6860 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:02:16.6860 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:02:16.6860 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6860 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:02:16.6860 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6860 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:02:16.6860 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:02:16.6860 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 23:02:16.6860 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:02:16.6860 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-05-31 23:02:16.6860 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:02:16.6860 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:02:16.6860 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:02:16.6860 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6860 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:02:16.6860 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:02:16.6860 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 23:02:16.6860 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 23:02:16.6860 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:02:16.6860 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:02:16.6860 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:02:16.6860 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:02:16.6860 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:02:16.6860 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:02:16.6860 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 23:02:16.6860 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 23:19:38.2087 Info Message Template Auto Format enabled
+2022-05-31 23:19:38.2298 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 23:19:38.2700 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 23:19:38.2700 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:19:38.2700 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:19:38.2793 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:19:38.2793 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:19:38.2793 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:19:38.2793 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:19:38.2793 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:19:38.2793 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:19:38.2793 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:19:38.2793 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:19:38.2793 Info Adding target FileTarget(Name=logfile)
+2022-05-31 23:19:38.2793 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 23:19:38.2793 Trace ParseRulesElement
+2022-05-31 23:19:38.2964 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-05-31 23:19:38.2964 Debug --- NLog configuration dump ---
+2022-05-31 23:19:38.2964 Debug Targets:
+2022-05-31 23:19:38.2964 Debug FileTarget(Name=logfile)
+2022-05-31 23:19:38.2964 Debug Rules:
+2022-05-31 23:19:38.2964 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 23:19:38.2964 Debug --- End of NLog configuration dump ---
+2022-05-31 23:19:38.2964 Trace FindReachableObject<System.Object>:
+2022-05-31 23:19:38.2964 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 23:19:38.2964 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 23:19:38.2964 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:19:38.2964 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:19:38.2964 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:19:38.2964 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:19:38.2964 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.2964 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:19:38.2964 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3096 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:19:38.3096 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:19:38.3096 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:19:38.3096 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:19:38.3096 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3096 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:19:38.3096 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3096 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:19:38.3096 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:19:38.3096 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 23:19:38.3096 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 23:19:38.3096 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-05-31 23:19:38.3096 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 23:19:38.3096 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 23:19:38.3096 Trace Initializing Layout Renderer: ${message}
+2022-05-31 23:19:38.3096 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:19:38.3096 Trace Initializing Layout Renderer: ${level}
+2022-05-31 23:19:38.3096 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:19:38.3096 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 23:19:38.3096 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 23:19:38.3096 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:19:38.3096 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:19:38.3096 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:19:38.3096 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:19:38.3096 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3096 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:19:38.3096 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3096 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:19:38.3265 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:19:38.3265 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 23:19:38.3265 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:19:38.3265 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-05-31 23:19:38.3265 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:19:38.3265 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:19:38.3265 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:19:38.3265 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3265 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:19:38.3265 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:19:38.3265 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 23:19:38.3265 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 23:19:38.3265 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:19:38.3265 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:19:38.3265 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:19:38.3265 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:19:38.3265 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:19:38.3265 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:19:38.3265 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 23:19:38.3265 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 23:22:36.0804 Info Message Template Auto Format enabled
+2022-05-31 23:22:36.0995 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 23:22:36.1390 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 23:22:36.1390 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:22:36.1390 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:22:36.1390 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:22:36.1390 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:22:36.1390 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:22:36.1390 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:22:36.1390 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:22:36.1390 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:22:36.1390 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:22:36.1534 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:22:36.1534 Info Adding target FileTarget(Name=logfile)
+2022-05-31 23:22:36.1534 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 23:22:36.1534 Trace ParseRulesElement
+2022-05-31 23:22:36.1534 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-05-31 23:22:36.1534 Debug --- NLog configuration dump ---
+2022-05-31 23:22:36.1534 Debug Targets:
+2022-05-31 23:22:36.1534 Debug FileTarget(Name=logfile)
+2022-05-31 23:22:36.1534 Debug Rules:
+2022-05-31 23:22:36.1534 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 23:22:36.1693 Debug --- End of NLog configuration dump ---
+2022-05-31 23:22:36.1693 Trace FindReachableObject<System.Object>:
+2022-05-31 23:22:36.1693 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 23:22:36.1693 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 23:22:36.1693 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:22:36.1693 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:22:36.1693 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:22:36.1693 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:22:36.1693 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1693 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:22:36.1693 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1693 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:22:36.1693 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:22:36.1693 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:22:36.1693 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:22:36.1693 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1693 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:22:36.1693 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1693 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:22:36.1693 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:22:36.1693 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 23:22:36.1693 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 23:22:36.1693 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-05-31 23:22:36.1693 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 23:22:36.1869 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${message}
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${level}
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 23:22:36.1869 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 23:22:36.1869 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:22:36.1869 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:22:36.1869 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:22:36.1869 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:22:36.1869 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1869 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:22:36.1869 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1869 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 23:22:36.1869 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:22:36.1869 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-05-31 23:22:36.1869 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:22:36.1869 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:22:36.1869 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:22:36.1869 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1869 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:22:36.1869 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:22:36.1869 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 23:22:36.1869 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 23:22:36.1869 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:22:36.1869 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:22:36.1869 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:22:36.2003 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:22:36.2003 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:22:36.2003 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:22:36.2003 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 23:22:36.2003 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 23:30:34.9172 Info Message Template Auto Format enabled
+2022-05-31 23:30:34.9378 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 23:30:34.9808 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 23:30:34.9841 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:30:34.9841 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:30:34.9841 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:30:34.9841 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:30:34.9841 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:30:34.9841 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:30:34.9841 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:30:34.9841 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:30:34.9841 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:30:34.9841 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:30:34.9841 Info Adding target FileTarget(Name=logfile)
+2022-05-31 23:30:34.9978 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 23:30:34.9978 Trace ParseRulesElement
+2022-05-31 23:30:34.9978 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-05-31 23:30:34.9978 Debug --- NLog configuration dump ---
+2022-05-31 23:30:34.9978 Debug Targets:
+2022-05-31 23:30:34.9978 Debug FileTarget(Name=logfile)
+2022-05-31 23:30:34.9978 Debug Rules:
+2022-05-31 23:30:35.0143 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 23:30:35.0143 Debug --- End of NLog configuration dump ---
+2022-05-31 23:30:35.0143 Trace FindReachableObject<System.Object>:
+2022-05-31 23:30:35.0143 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 23:30:35.0143 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 23:30:35.0143 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:30:35.0143 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:30:35.0143 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:30:35.0143 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:30:35.0143 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0143 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:30:35.0143 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0143 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:30:35.0143 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:30:35.0143 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:30:35.0143 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:30:35.0143 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0143 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:30:35.0143 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0143 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:30:35.0143 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:30:35.0143 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 23:30:35.0143 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 23:30:35.0296 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-05-31 23:30:35.0296 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 23:30:35.0296 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${message}
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${level}
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 23:30:35.0296 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 23:30:35.0296 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:30:35.0296 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:30:35.0296 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:30:35.0296 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:30:35.0296 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0296 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:30:35.0296 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0296 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 23:30:35.0296 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:30:35.0296 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-05-31 23:30:35.0296 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:30:35.0296 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:30:35.0296 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:30:35.0448 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0448 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:30:35.0448 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:30:35.0448 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 23:30:35.0448 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 23:30:35.0448 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:30:35.0448 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:30:35.0448 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:30:35.0448 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:30:35.0448 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:30:35.0448 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:30:35.0448 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 23:30:35.0448 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 23:32:56.3519 Info Message Template Auto Format enabled
+2022-05-31 23:32:56.3709 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 23:32:56.4133 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 23:32:56.4133 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:32:56.4199 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:32:56.4199 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:32:56.4199 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:32:56.4199 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:32:56.4199 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:32:56.4199 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:32:56.4199 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:32:56.4199 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:32:56.4199 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:32:56.4199 Info Adding target FileTarget(Name=logfile)
+2022-05-31 23:32:56.4199 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 23:32:56.4199 Trace ParseRulesElement
+2022-05-31 23:32:56.4481 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-05-31 23:32:56.4481 Debug --- NLog configuration dump ---
+2022-05-31 23:32:56.4481 Debug Targets:
+2022-05-31 23:32:56.4507 Debug FileTarget(Name=logfile)
+2022-05-31 23:32:56.4507 Debug Rules:
+2022-05-31 23:32:56.4507 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 23:32:56.4507 Debug --- End of NLog configuration dump ---
+2022-05-31 23:32:56.4507 Trace FindReachableObject<System.Object>:
+2022-05-31 23:32:56.4507 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 23:32:56.4507 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 23:32:56.4507 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:32:56.4507 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:32:56.4507 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:32:56.4507 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:32:56.4507 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4507 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:32:56.4507 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4507 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:32:56.4507 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:32:56.4507 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:32:56.4507 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:32:56.4507 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4507 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:32:56.4507 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4507 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:32:56.4507 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:32:56.4507 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 23:32:56.4670 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 23:32:56.4670 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-05-31 23:32:56.4670 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 23:32:56.4670 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 23:32:56.4670 Trace Initializing Layout Renderer: ${message}
+2022-05-31 23:32:56.4670 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:32:56.4670 Trace Initializing Layout Renderer: ${level}
+2022-05-31 23:32:56.4670 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:32:56.4670 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 23:32:56.4670 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 23:32:56.4670 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:32:56.4670 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:32:56.4670 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:32:56.4670 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:32:56.4670 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4670 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:32:56.4670 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4670 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:32:56.4821 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:32:56.4821 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 23:32:56.4821 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:32:56.4821 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-05-31 23:32:56.4821 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:32:56.4821 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:32:56.4821 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:32:56.4821 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4821 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:32:56.4821 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:32:56.4821 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 23:32:56.4821 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 23:32:56.4821 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:32:56.4821 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:32:56.4821 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:32:56.4821 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:32:56.4821 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:32:56.4821 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:32:56.4821 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 23:32:56.4821 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 23:35:22.2653 Info Message Template Auto Format enabled
+2022-05-31 23:35:22.2851 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 23:35:22.3295 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 23:35:22.3295 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:35:22.3295 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:35:22.3295 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:35:22.3295 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:35:22.3417 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:35:22.3417 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:35:22.3417 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:35:22.3417 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:35:22.3417 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:35:22.3417 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:35:22.3417 Info Adding target FileTarget(Name=logfile)
+2022-05-31 23:35:22.3417 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 23:35:22.3417 Trace ParseRulesElement
+2022-05-31 23:35:22.3417 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-05-31 23:35:22.3587 Debug --- NLog configuration dump ---
+2022-05-31 23:35:22.3587 Debug Targets:
+2022-05-31 23:35:22.3587 Debug FileTarget(Name=logfile)
+2022-05-31 23:35:22.3587 Debug Rules:
+2022-05-31 23:35:22.3587 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 23:35:22.3587 Debug --- End of NLog configuration dump ---
+2022-05-31 23:35:22.3587 Trace FindReachableObject<System.Object>:
+2022-05-31 23:35:22.3587 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 23:35:22.3587 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 23:35:22.3587 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:35:22.3587 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:35:22.3587 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:35:22.3726 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:35:22.3726 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.3726 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:35:22.3726 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.3726 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:35:22.3726 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:35:22.3726 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:35:22.3726 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:35:22.3726 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.3726 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:35:22.3726 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.3726 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:35:22.3726 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:35:22.3726 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 23:35:22.3726 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 23:35:22.3726 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-05-31 23:35:22.3726 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 23:35:22.3726 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 23:35:22.3726 Trace Initializing Layout Renderer: ${message}
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${level}
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 23:35:22.3887 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 23:35:22.3887 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:35:22.3887 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:35:22.3887 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:35:22.3887 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 23:35:22.3887 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.3887 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 23:35:22.3887 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.3887 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 23:35:22.3887 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 23:35:22.3887 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-05-31 23:35:22.3887 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 23:35:22.3887 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:35:22.3887 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 23:35:22.4032 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.4032 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 23:35:22.4032 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 23:35:22.4032 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 23:35:22.4032 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 23:35:22.4032 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 23:35:22.4032 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 23:35:22.4032 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-05-31 23:35:22.4032 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 23:35:22.4032 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 23:35:22.4032 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 23:35:22.4032 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 23:35:22.4032 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-01 21:52:49.2330 Info Message Template Auto Format enabled
+2022-06-01 21:52:49.2775 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-01 21:52:49.3372 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-01 21:52:49.3372 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:52:49.3372 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:52:49.3372 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:52:49.3372 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:52:49.3372 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:52:49.3372 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:52:49.3524 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:52:49.3524 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:52:49.3524 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:52:49.3524 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:52:49.3524 Info Adding target FileTarget(Name=logfile)
+2022-06-01 21:52:49.3524 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-01 21:52:49.3524 Trace ParseRulesElement
+2022-06-01 21:52:49.3524 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-01 21:52:49.3691 Debug --- NLog configuration dump ---
+2022-06-01 21:52:49.3691 Debug Targets:
+2022-06-01 21:52:49.3691 Debug FileTarget(Name=logfile)
+2022-06-01 21:52:49.3691 Debug Rules:
+2022-06-01 21:52:49.3691 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-01 21:52:49.3691 Debug --- End of NLog configuration dump ---
+2022-06-01 21:52:49.3691 Trace FindReachableObject<System.Object>:
+2022-06-01 21:52:49.3691 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-01 21:52:49.3691 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-01 21:52:49.3691 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-01 21:52:49.3691 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-01 21:52:49.3691 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:52:49.3691 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:52:49.3691 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.3691 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:52:49.3691 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.3836 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-01 21:52:49.3836 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:52:49.3836 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:52:49.3836 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:52:49.3836 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.3836 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:52:49.3836 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.3836 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:52:49.3836 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-01 21:52:49.3836 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-01 21:52:49.3836 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-01 21:52:49.3836 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-01 21:52:49.3836 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-01 21:52:49.3836 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-01 21:52:49.3836 Trace Initializing Layout Renderer: ${message}
+2022-06-01 21:52:49.3836 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:52:49.3836 Trace Initializing Layout Renderer: ${level}
+2022-06-01 21:52:49.3836 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:52:49.3836 Trace Initializing Layout Renderer: ${longdate}
+2022-06-01 21:52:49.3836 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-01 21:52:49.4003 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:52:49.4003 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:52:49.4003 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:52:49.4003 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:52:49.4003 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.4003 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:52:49.4003 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.4003 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:52:49.4003 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:52:49.4003 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-01 21:52:49.4003 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:52:49.4003 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-01 21:52:49.4003 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:52:49.4003 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:52:49.4003 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:52:49.4003 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.4003 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:52:49.4003 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:52:49.4003 Trace Initializing FileTarget(Name=logfile)
+2022-06-01 21:52:49.4003 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-01 21:52:49.4003 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-01 21:52:49.4003 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-01 21:52:49.4003 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:52:49.4003 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-01 21:52:49.4003 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:52:49.4003 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-01 21:52:49.4003 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-01 21:52:49.4003 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-01 21:54:03.6308 Info Message Template Auto Format enabled
+2022-06-01 21:54:03.6516 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-01 21:54:03.7004 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-01 21:54:03.7004 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:54:03.7004 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:54:03.7123 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:54:03.7123 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:54:03.7123 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:54:03.7123 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:54:03.7123 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:54:03.7123 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:54:03.7123 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:54:03.7123 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:54:03.7123 Info Adding target FileTarget(Name=logfile)
+2022-06-01 21:54:03.7123 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-01 21:54:03.7123 Trace ParseRulesElement
+2022-06-01 21:54:03.7361 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-01 21:54:03.7361 Debug --- NLog configuration dump ---
+2022-06-01 21:54:03.7361 Debug Targets:
+2022-06-01 21:54:03.7361 Debug FileTarget(Name=logfile)
+2022-06-01 21:54:03.7361 Debug Rules:
+2022-06-01 21:54:03.7361 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-01 21:54:03.7361 Debug --- End of NLog configuration dump ---
+2022-06-01 21:54:03.7460 Trace FindReachableObject<System.Object>:
+2022-06-01 21:54:03.7460 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-01 21:54:03.7460 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-01 21:54:03.7460 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-01 21:54:03.7460 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-01 21:54:03.7460 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:54:03.7460 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:54:03.7460 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7460 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:54:03.7460 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7460 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-01 21:54:03.7460 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:54:03.7460 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:54:03.7460 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:54:03.7460 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7460 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:54:03.7460 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7460 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:54:03.7460 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-01 21:54:03.7595 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-01 21:54:03.7595 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-01 21:54:03.7595 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-01 21:54:03.7595 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-01 21:54:03.7739 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${message}
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${level}
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${longdate}
+2022-06-01 21:54:03.7739 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-01 21:54:03.7739 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:54:03.7739 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:54:03.7739 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:54:03.7739 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:54:03.7739 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7739 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:54:03.7739 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7739 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:54:03.7739 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-01 21:54:03.7900 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:54:03.7900 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-01 21:54:03.7900 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:54:03.7900 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:54:03.7900 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:54:03.7900 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7900 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:54:03.7900 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:54:03.7900 Trace Initializing FileTarget(Name=logfile)
+2022-06-01 21:54:03.7900 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-01 21:54:03.7900 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-01 21:54:03.7900 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-01 21:54:03.7900 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:54:03.7900 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-01 21:54:03.7900 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:54:03.7900 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-01 21:54:03.7900 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-01 21:54:03.7900 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-01 21:56:02.2206 Info Message Template Auto Format enabled
+2022-06-01 21:56:02.2478 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-01 21:56:02.3133 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-01 21:56:02.3133 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:56:02.3227 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:56:02.3227 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:56:02.3227 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:56:02.3227 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:56:02.3227 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:56:02.3227 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:56:02.3227 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:56:02.3227 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:56:02.3227 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:56:02.3227 Info Adding target FileTarget(Name=logfile)
+2022-06-01 21:56:02.3227 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-01 21:56:02.3227 Trace ParseRulesElement
+2022-06-01 21:56:02.3491 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-01 21:56:02.3491 Debug --- NLog configuration dump ---
+2022-06-01 21:56:02.3491 Debug Targets:
+2022-06-01 21:56:02.3491 Debug FileTarget(Name=logfile)
+2022-06-01 21:56:02.3491 Debug Rules:
+2022-06-01 21:56:02.3544 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-01 21:56:02.3544 Debug --- End of NLog configuration dump ---
+2022-06-01 21:56:02.3544 Trace FindReachableObject<System.Object>:
+2022-06-01 21:56:02.3544 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-01 21:56:02.3544 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-01 21:56:02.3544 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-01 21:56:02.3544 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-01 21:56:02.3544 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:56:02.3544 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:56:02.3544 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3678 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:56:02.3678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3678 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-01 21:56:02.3678 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:56:02.3678 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:56:02.3678 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:56:02.3678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3678 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:56:02.3678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3678 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:56:02.3678 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-01 21:56:02.3678 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-01 21:56:02.3678 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-01 21:56:02.3678 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-01 21:56:02.3678 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-01 21:56:02.3878 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-01 21:56:02.3878 Trace Initializing Layout Renderer: ${message}
+2022-06-01 21:56:02.3878 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:56:02.3878 Trace Initializing Layout Renderer: ${level}
+2022-06-01 21:56:02.3878 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:56:02.3878 Trace Initializing Layout Renderer: ${longdate}
+2022-06-01 21:56:02.3878 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-01 21:56:02.3878 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:56:02.3878 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:56:02.3878 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:56:02.3878 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-01 21:56:02.3878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3878 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-01 21:56:02.3878 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3878 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-01 21:56:02.3994 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:56:02.3994 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-01 21:56:02.3994 Trace Initializing Layout Renderer: ${literal}
+2022-06-01 21:56:02.3994 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-01 21:56:02.3994 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-01 21:56:02.3994 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:56:02.3994 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-01 21:56:02.3994 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3994 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-01 21:56:02.3994 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-01 21:56:02.3994 Trace Initializing FileTarget(Name=logfile)
+2022-06-01 21:56:02.3994 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-01 21:56:02.3994 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-01 21:56:02.3994 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-01 21:56:02.3994 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-01 21:56:02.3994 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-01 21:56:02.3994 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-01 21:56:02.3994 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-01 21:56:02.3994 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-01 21:56:02.3994 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-05 20:11:35.1400 Info Message Template Auto Format enabled
+2022-06-05 20:11:35.1625 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-05 20:11:35.2169 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-05 20:11:35.2169 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:11:35.2169 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:11:35.2169 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-05 20:11:35.2283 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:11:35.2283 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:11:35.2283 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-05 20:11:35.2283 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:11:35.2283 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-05 20:11:35.2283 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:11:35.2283 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-05 20:11:35.2283 Info Adding target FileTarget(Name=logfile)
+2022-06-05 20:11:35.2283 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-05 20:11:35.2283 Trace ParseRulesElement
+2022-06-05 20:11:35.2448 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-05 20:11:35.2448 Debug --- NLog configuration dump ---
+2022-06-05 20:11:35.2448 Debug Targets:
+2022-06-05 20:11:35.2448 Debug FileTarget(Name=logfile)
+2022-06-05 20:11:35.2448 Debug Rules:
+2022-06-05 20:11:35.2448 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-05 20:11:35.2448 Debug --- End of NLog configuration dump ---
+2022-06-05 20:11:35.2448 Trace FindReachableObject<System.Object>:
+2022-06-05 20:11:35.2448 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-05 20:11:35.2448 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-05 20:11:35.2448 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-05 20:11:35.2448 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-05 20:11:35.2448 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:11:35.2448 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:11:35.2448 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2448 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-05 20:11:35.2448 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2448 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-05 20:11:35.2448 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:11:35.2448 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:11:35.2590 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-05 20:11:35.2590 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2590 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-05 20:11:35.2590 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2590 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-05 20:11:35.2590 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-05 20:11:35.2590 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-05 20:11:35.2590 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-05 20:11:35.2590 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-05 20:11:35.2590 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-05 20:11:35.2590 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-05 20:11:35.2590 Trace Initializing Layout Renderer: ${message}
+2022-06-05 20:11:35.2590 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:11:35.2590 Trace Initializing Layout Renderer: ${level}
+2022-06-05 20:11:35.2590 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:11:35.2590 Trace Initializing Layout Renderer: ${longdate}
+2022-06-05 20:11:35.2590 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-05 20:11:35.2590 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:11:35.2590 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:11:35.2590 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:11:35.2590 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-05 20:11:35.2590 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2590 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-05 20:11:35.2590 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2590 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-05 20:11:35.2748 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:11:35.2748 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-05 20:11:35.2748 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:11:35.2748 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-05 20:11:35.2748 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:11:35.2748 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:11:35.2748 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:11:35.2748 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2748 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-05 20:11:35.2748 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:11:35.2748 Trace Initializing FileTarget(Name=logfile)
+2022-06-05 20:11:35.2748 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-05 20:11:35.2748 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-05 20:11:35.2748 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-05 20:11:35.2748 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:11:35.2748 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-05 20:11:35.2748 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:11:35.2748 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-05 20:11:35.2748 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-05 20:11:35.2748 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-05 20:22:44.8824 Info Message Template Auto Format enabled
+2022-06-05 20:22:44.9083 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-05 20:22:44.9617 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-05 20:22:44.9646 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:22:44.9646 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:22:44.9646 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-05 20:22:44.9646 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:22:44.9646 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:22:44.9768 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-05 20:22:44.9768 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:22:44.9768 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-05 20:22:44.9768 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:22:44.9768 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-05 20:22:44.9768 Info Adding target FileTarget(Name=logfile)
+2022-06-05 20:22:44.9768 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-05 20:22:44.9768 Trace ParseRulesElement
+2022-06-05 20:22:44.9944 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-05 20:22:44.9944 Debug --- NLog configuration dump ---
+2022-06-05 20:22:44.9944 Debug Targets:
+2022-06-05 20:22:44.9944 Debug FileTarget(Name=logfile)
+2022-06-05 20:22:44.9944 Debug Rules:
+2022-06-05 20:22:44.9944 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-05 20:22:44.9944 Debug --- End of NLog configuration dump ---
+2022-06-05 20:22:44.9944 Trace FindReachableObject<System.Object>:
+2022-06-05 20:22:44.9944 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-05 20:22:44.9944 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-05 20:22:44.9944 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-05 20:22:44.9944 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-05 20:22:44.9944 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:22:44.9944 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:22:45.0090 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0090 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-05 20:22:45.0090 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0090 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-05 20:22:45.0090 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:22:45.0090 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:22:45.0090 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-05 20:22:45.0090 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0090 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-05 20:22:45.0090 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0090 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-05 20:22:45.0090 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-05 20:22:45.0090 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-05 20:22:45.0090 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-05 20:22:45.0090 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-05 20:22:45.0090 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-05 20:22:45.0254 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${message}
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${level}
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${longdate}
+2022-06-05 20:22:45.0254 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-05 20:22:45.0254 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:22:45.0254 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:22:45.0254 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:22:45.0254 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-05 20:22:45.0254 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0254 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-05 20:22:45.0254 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0254 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-05 20:22:45.0254 Trace Initializing Layout Renderer: ${literal}
+2022-06-05 20:22:45.0403 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-05 20:22:45.0403 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-05 20:22:45.0403 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:22:45.0403 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-05 20:22:45.0403 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0403 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-05 20:22:45.0403 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-05 20:22:45.0403 Trace Initializing FileTarget(Name=logfile)
+2022-06-05 20:22:45.0403 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-05 20:22:45.0403 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-05 20:22:45.0403 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-05 20:22:45.0403 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-05 20:22:45.0403 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-05 20:22:45.0403 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-05 20:22:45.0403 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-05 20:22:45.0403 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-05 20:22:45.0403 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 00:48:21.6485 Info Message Template Auto Format enabled
+2022-06-19 00:48:21.6677 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 00:48:21.7203 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 00:48:21.7203 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 00:48:21.7270 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 00:48:21.7270 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 00:48:21.7270 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 00:48:21.7270 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 00:48:21.7270 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 00:48:21.7270 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 00:48:21.7270 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 00:48:21.7270 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 00:48:21.7270 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 00:48:21.7270 Info Adding target FileTarget(Name=logfile)
+2022-06-19 00:48:21.7270 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 00:48:21.7270 Trace ParseRulesElement
+2022-06-19 00:48:21.7474 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 00:48:21.7474 Debug --- NLog configuration dump ---
+2022-06-19 00:48:21.7474 Debug Targets:
+2022-06-19 00:48:21.7474 Debug FileTarget(Name=logfile)
+2022-06-19 00:48:21.7474 Debug Rules:
+2022-06-19 00:48:21.7474 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 00:48:21.7474 Debug --- End of NLog configuration dump ---
+2022-06-19 00:48:21.7474 Trace FindReachableObject<System.Object>:
+2022-06-19 00:48:21.7554 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 00:48:21.7554 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 00:48:21.7554 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 00:48:21.7554 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 00:48:21.7554 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 00:48:21.7554 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 00:48:21.7554 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7554 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 00:48:21.7554 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7554 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 00:48:21.7554 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 00:48:21.7554 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 00:48:21.7554 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 00:48:21.7554 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7554 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 00:48:21.7554 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7554 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 00:48:21.7554 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 00:48:21.7554 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 00:48:21.7554 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 00:48:21.7554 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 00:48:21.7554 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 00:48:21.7554 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 00:48:21.7554 Trace Initializing Layout Renderer: ${message}
+2022-06-19 00:48:21.7554 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 00:48:21.7714 Trace Initializing Layout Renderer: ${level}
+2022-06-19 00:48:21.7714 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 00:48:21.7714 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 00:48:21.7714 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 00:48:21.7714 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 00:48:21.7714 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 00:48:21.7714 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 00:48:21.7714 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 00:48:21.7714 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7714 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 00:48:21.7714 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7714 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 00:48:21.7714 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 00:48:21.7714 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 00:48:21.7714 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 00:48:21.7714 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 00:48:21.7714 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 00:48:21.7714 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 00:48:21.7714 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 00:48:21.7714 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7714 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 00:48:21.7714 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 00:48:21.7714 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 00:48:21.7714 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 00:48:21.7714 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 00:48:21.7714 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 00:48:21.7714 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 00:48:21.7714 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 00:48:21.7714 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 00:48:21.7714 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 00:48:21.7714 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 00:48:21.7714 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 01:14:33.5447 Info Message Template Auto Format enabled
+2022-06-19 01:14:33.5655 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 01:14:33.6101 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 01:14:33.6101 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:14:33.6181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:14:33.6181 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:14:33.6181 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:14:33.6181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:14:33.6181 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:14:33.6181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:14:33.6181 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:14:33.6181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:14:33.6181 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:14:33.6181 Info Adding target FileTarget(Name=logfile)
+2022-06-19 01:14:33.6181 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 01:14:33.6181 Trace ParseRulesElement
+2022-06-19 01:14:33.6577 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 01:14:33.6577 Debug --- NLog configuration dump ---
+2022-06-19 01:14:33.6640 Debug Targets:
+2022-06-19 01:14:33.6640 Debug FileTarget(Name=logfile)
+2022-06-19 01:14:33.6640 Debug Rules:
+2022-06-19 01:14:33.6640 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 01:14:33.6640 Debug --- End of NLog configuration dump ---
+2022-06-19 01:14:33.6851 Trace FindReachableObject<System.Object>:
+2022-06-19 01:14:33.6851 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 01:14:33.6851 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 01:14:33.6983 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:14:33.6983 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:14:33.6983 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:14:33.6983 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:14:33.6983 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.6983 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:14:33.6983 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.6983 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:14:33.6983 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:14:33.6983 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:14:33.6983 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:14:33.7090 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.7090 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:14:33.7090 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.7090 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:14:33.7090 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:14:33.7090 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 01:14:33.7090 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 01:14:33.7090 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 01:14:33.7279 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 01:14:33.7429 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 01:14:33.7429 Trace Initializing Layout Renderer: ${message}
+2022-06-19 01:14:33.7429 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:14:33.7554 Trace Initializing Layout Renderer: ${level}
+2022-06-19 01:14:33.7554 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:14:33.7554 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 01:14:33.7554 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 01:14:33.7554 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:14:33.7554 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:14:33.7554 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:14:33.7554 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:14:33.7554 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.7554 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:14:33.7554 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.7554 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:14:33.7554 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:14:33.7554 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 01:14:33.7713 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:14:33.7713 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 01:14:33.7713 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:14:33.7713 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:14:33.7713 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:14:33.7713 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.7713 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:14:33.7713 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:14:33.7873 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 01:14:33.7873 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 01:14:33.7873 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:14:33.7873 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:14:33.7873 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:14:33.7873 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:14:33.7873 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:14:33.7873 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:14:33.7873 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 01:14:33.7873 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 01:27:02.2164 Info Message Template Auto Format enabled
+2022-06-19 01:27:02.2361 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 01:27:02.2753 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 01:27:02.2753 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:27:02.2753 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:27:02.2753 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:27:02.2892 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:27:02.2892 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:27:02.2892 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:27:02.2892 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:27:02.2892 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:27:02.2892 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:27:02.2892 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:27:02.2892 Info Adding target FileTarget(Name=logfile)
+2022-06-19 01:27:02.2892 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 01:27:02.2892 Trace ParseRulesElement
+2022-06-19 01:27:02.3094 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 01:27:02.3094 Debug --- NLog configuration dump ---
+2022-06-19 01:27:02.3094 Debug Targets:
+2022-06-19 01:27:02.3094 Debug FileTarget(Name=logfile)
+2022-06-19 01:27:02.3094 Debug Rules:
+2022-06-19 01:27:02.3094 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 01:27:02.3094 Debug --- End of NLog configuration dump ---
+2022-06-19 01:27:02.3094 Trace FindReachableObject<System.Object>:
+2022-06-19 01:27:02.3184 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 01:27:02.3184 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 01:27:02.3184 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:27:02.3184 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:27:02.3184 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:27:02.3184 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:27:02.3184 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3184 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:27:02.3184 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3184 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:27:02.3184 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:27:02.3184 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:27:02.3184 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:27:02.3184 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3184 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:27:02.3184 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3184 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:27:02.3184 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:27:02.3184 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 01:27:02.3184 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 01:27:02.3184 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 01:27:02.3335 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 01:27:02.3335 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${message}
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${level}
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 01:27:02.3335 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 01:27:02.3335 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:27:02.3335 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:27:02.3335 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:27:02.3335 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:27:02.3335 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3335 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:27:02.3335 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3335 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 01:27:02.3335 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:27:02.3335 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 01:27:02.3494 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:27:02.3494 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:27:02.3494 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:27:02.3494 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3494 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:27:02.3494 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:27:02.3494 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 01:27:02.3494 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 01:27:02.3494 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:27:02.3494 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:27:02.3494 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:27:02.3494 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:27:02.3494 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:27:02.3494 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:27:02.3494 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 01:27:02.3494 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 01:28:25.3299 Info Message Template Auto Format enabled
+2022-06-19 01:28:25.3497 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 01:28:25.3912 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 01:28:25.3912 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:28:25.3985 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:28:25.3985 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:28:25.3985 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:28:25.3985 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:28:25.3985 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:28:25.3985 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:28:25.3985 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:28:25.3985 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:28:25.3985 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:28:25.3985 Info Adding target FileTarget(Name=logfile)
+2022-06-19 01:28:25.3985 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 01:28:25.3985 Trace ParseRulesElement
+2022-06-19 01:28:25.4184 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 01:28:25.4184 Debug --- NLog configuration dump ---
+2022-06-19 01:28:25.4184 Debug Targets:
+2022-06-19 01:28:25.4184 Debug FileTarget(Name=logfile)
+2022-06-19 01:28:25.4184 Debug Rules:
+2022-06-19 01:28:25.4184 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 01:28:25.4184 Debug --- End of NLog configuration dump ---
+2022-06-19 01:28:25.4184 Trace FindReachableObject<System.Object>:
+2022-06-19 01:28:25.4271 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 01:28:25.4271 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 01:28:25.4271 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:28:25.4271 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:28:25.4271 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:28:25.4271 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:28:25.4271 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4271 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:28:25.4271 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4271 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:28:25.4271 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:28:25.4271 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:28:25.4271 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:28:25.4271 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4271 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:28:25.4271 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4271 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:28:25.4271 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:28:25.4271 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 01:28:25.4271 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 01:28:25.4271 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 01:28:25.4271 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 01:28:25.4459 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${message}
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${level}
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 01:28:25.4459 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 01:28:25.4459 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:28:25.4459 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:28:25.4459 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:28:25.4459 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:28:25.4459 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4459 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:28:25.4459 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4459 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 01:28:25.4459 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:28:25.4459 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 01:28:25.4459 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:28:25.4459 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:28:25.4459 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:28:25.4593 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4593 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:28:25.4593 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:28:25.4593 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 01:28:25.4593 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 01:28:25.4593 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:28:25.4593 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:28:25.4593 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:28:25.4593 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:28:25.4593 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:28:25.4593 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:28:25.4593 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 01:28:25.4593 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 01:31:15.6715 Info Message Template Auto Format enabled
+2022-06-19 01:31:15.6924 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 01:31:15.7561 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 01:31:15.7561 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:31:15.7561 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:31:15.7561 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:31:15.7561 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:31:15.7561 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:31:15.7561 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:31:15.7720 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:31:15.7720 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:31:15.7720 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:31:15.7720 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:31:15.7720 Info Adding target FileTarget(Name=logfile)
+2022-06-19 01:31:15.7720 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 01:31:15.7720 Trace ParseRulesElement
+2022-06-19 01:31:15.7720 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 01:31:15.7879 Debug --- NLog configuration dump ---
+2022-06-19 01:31:15.7879 Debug Targets:
+2022-06-19 01:31:15.7879 Debug FileTarget(Name=logfile)
+2022-06-19 01:31:15.7879 Debug Rules:
+2022-06-19 01:31:15.7879 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 01:31:15.7879 Debug --- End of NLog configuration dump ---
+2022-06-19 01:31:15.7879 Trace FindReachableObject<System.Object>:
+2022-06-19 01:31:15.7879 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 01:31:15.7879 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 01:31:15.7879 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:31:15.7879 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:31:15.7879 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:31:15.7879 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:31:15.7879 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.7879 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:31:15.7879 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.7879 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:31:15.7879 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:31:15.7879 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:31:15.7879 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:31:15.7879 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.7879 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:31:15.7879 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.8026 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:31:15.8026 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:31:15.8026 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 01:31:15.8026 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 01:31:15.8026 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 01:31:15.8026 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 01:31:15.8026 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 01:31:15.8026 Trace Initializing Layout Renderer: ${message}
+2022-06-19 01:31:15.8026 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:31:15.8026 Trace Initializing Layout Renderer: ${level}
+2022-06-19 01:31:15.8026 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:31:15.8026 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 01:31:15.8026 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 01:31:15.8026 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:31:15.8026 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:31:15.8026 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:31:15.8026 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:31:15.8026 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.8026 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:31:15.8026 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.8026 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:31:15.8187 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:31:15.8187 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 01:31:15.8187 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:31:15.8187 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 01:31:15.8187 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:31:15.8187 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:31:15.8187 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:31:15.8187 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.8187 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:31:15.8187 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:31:15.8187 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 01:31:15.8187 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 01:31:15.8187 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:31:15.8187 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:31:15.8187 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:31:15.8187 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:31:15.8187 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:31:15.8187 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:31:15.8187 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 01:31:15.8187 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 01:32:36.7476 Info Message Template Auto Format enabled
+2022-06-19 01:32:36.7687 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 01:32:36.8192 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 01:32:36.8192 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:32:36.8192 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:32:36.8192 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:32:36.8340 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:32:36.8340 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:32:36.8340 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:32:36.8340 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:32:36.8340 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:32:36.8340 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:32:36.8340 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:32:36.8340 Info Adding target FileTarget(Name=logfile)
+2022-06-19 01:32:36.8340 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 01:32:36.8340 Trace ParseRulesElement
+2022-06-19 01:32:36.8570 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 01:32:36.8570 Debug --- NLog configuration dump ---
+2022-06-19 01:32:36.8570 Debug Targets:
+2022-06-19 01:32:36.8570 Debug FileTarget(Name=logfile)
+2022-06-19 01:32:36.8570 Debug Rules:
+2022-06-19 01:32:36.8737 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 01:32:36.8737 Debug --- End of NLog configuration dump ---
+2022-06-19 01:32:36.8737 Trace FindReachableObject<System.Object>:
+2022-06-19 01:32:36.8817 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 01:32:36.8817 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 01:32:36.8817 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:32:36.8817 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:32:36.8817 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:32:36.8817 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:32:36.8817 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.8968 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:32:36.8968 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.8968 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:32:36.8968 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:32:36.8968 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:32:36.8968 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:32:36.8968 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.8968 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:32:36.8968 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.8968 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:32:36.8968 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:32:36.8968 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 01:32:36.8968 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 01:32:36.8968 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 01:32:36.9128 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 01:32:36.9128 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 01:32:36.9128 Trace Initializing Layout Renderer: ${message}
+2022-06-19 01:32:36.9128 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:32:36.9128 Trace Initializing Layout Renderer: ${level}
+2022-06-19 01:32:36.9128 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:32:36.9128 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 01:32:36.9128 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 01:32:36.9291 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:32:36.9291 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:32:36.9291 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:32:36.9291 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 01:32:36.9291 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.9291 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 01:32:36.9291 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.9291 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 01:32:36.9291 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:32:36.9434 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 01:32:36.9434 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 01:32:36.9434 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 01:32:36.9434 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 01:32:36.9434 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:32:36.9434 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 01:32:36.9434 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.9434 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 01:32:36.9434 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 01:32:36.9434 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 01:32:36.9434 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 01:32:36.9434 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 01:32:36.9434 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 01:32:36.9434 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 01:32:36.9434 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 01:32:36.9434 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 01:32:36.9434 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 01:32:36.9434 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 01:32:36.9434 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 20:20:42.4159 Info Message Template Auto Format enabled
+2022-06-19 20:20:42.4397 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 20:20:42.4973 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 20:20:42.4973 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:20:42.4973 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:20:42.5068 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:20:42.5068 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:20:42.5068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:20:42.5068 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:20:42.5068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:20:42.5068 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:20:42.5068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:20:42.5068 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:20:42.5068 Info Adding target FileTarget(Name=logfile)
+2022-06-19 20:20:42.5068 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 20:20:42.5068 Trace ParseRulesElement
+2022-06-19 20:20:42.5241 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 20:20:42.5241 Debug --- NLog configuration dump ---
+2022-06-19 20:20:42.5241 Debug Targets:
+2022-06-19 20:20:42.5241 Debug FileTarget(Name=logfile)
+2022-06-19 20:20:42.5241 Debug Rules:
+2022-06-19 20:20:42.5241 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 20:20:42.5241 Debug --- End of NLog configuration dump ---
+2022-06-19 20:20:42.5241 Trace FindReachableObject<System.Object>:
+2022-06-19 20:20:42.5241 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 20:20:42.5241 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 20:20:42.5241 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 20:20:42.5241 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 20:20:42.5241 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:20:42.5241 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:20:42.5241 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5366 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:20:42.5366 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5366 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 20:20:42.5366 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:20:42.5366 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:20:42.5366 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:20:42.5366 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5366 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:20:42.5366 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5366 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:20:42.5366 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 20:20:42.5366 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 20:20:42.5366 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 20:20:42.5366 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 20:20:42.5366 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 20:20:42.5366 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 20:20:42.5366 Trace Initializing Layout Renderer: ${message}
+2022-06-19 20:20:42.5366 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:20:42.5366 Trace Initializing Layout Renderer: ${level}
+2022-06-19 20:20:42.5366 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:20:42.5366 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 20:20:42.5366 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 20:20:42.5366 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:20:42.5366 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:20:42.5366 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:20:42.5366 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:20:42.5366 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5366 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:20:42.5525 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5525 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:20:42.5525 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:20:42.5525 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 20:20:42.5525 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:20:42.5525 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 20:20:42.5525 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:20:42.5525 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:20:42.5525 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:20:42.5525 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5525 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:20:42.5525 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:20:42.5525 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 20:20:42.5525 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 20:20:42.5525 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 20:20:42.5525 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 20:20:42.5525 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:20:42.5525 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 20:20:42.5525 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:20:42.5525 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 20:20:42.5525 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 20:20:42.5525 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 20:26:24.3213 Info Message Template Auto Format enabled
+2022-06-19 20:26:24.3483 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 20:26:24.4079 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 20:26:24.4079 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:26:24.4172 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:26:24.4172 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:26:24.4172 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:26:24.4172 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:26:24.4172 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:26:24.4172 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:26:24.4172 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:26:24.4172 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:26:24.4273 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:26:24.4273 Info Adding target FileTarget(Name=logfile)
+2022-06-19 20:26:24.4273 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 20:26:24.4273 Trace ParseRulesElement
+2022-06-19 20:26:24.4273 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 20:26:24.4441 Debug --- NLog configuration dump ---
+2022-06-19 20:26:24.4441 Debug Targets:
+2022-06-19 20:26:24.4441 Debug FileTarget(Name=logfile)
+2022-06-19 20:26:24.4441 Debug Rules:
+2022-06-19 20:26:24.4441 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 20:26:24.4441 Debug --- End of NLog configuration dump ---
+2022-06-19 20:26:24.4441 Trace FindReachableObject<System.Object>:
+2022-06-19 20:26:24.4441 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 20:26:24.4441 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 20:26:24.4596 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 20:26:24.4596 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 20:26:24.4596 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:26:24.4596 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:26:24.4596 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4596 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:26:24.4596 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4596 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 20:26:24.4596 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:26:24.4596 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:26:24.4596 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:26:24.4596 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4596 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:26:24.4596 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4596 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:26:24.4596 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 20:26:24.4596 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 20:26:24.4596 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 20:26:24.4746 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 20:26:24.4746 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 20:26:24.4746 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 20:26:24.4746 Trace Initializing Layout Renderer: ${message}
+2022-06-19 20:26:24.4746 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:26:24.4746 Trace Initializing Layout Renderer: ${level}
+2022-06-19 20:26:24.4746 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:26:24.4746 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 20:26:24.4746 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 20:26:24.4746 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:26:24.4746 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:26:24.4746 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:26:24.4746 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:26:24.4746 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4746 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:26:24.4746 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4746 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:26:24.4909 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:26:24.4909 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 20:26:24.4909 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:26:24.4909 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 20:26:24.4909 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:26:24.4909 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:26:24.4909 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:26:24.4909 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4909 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:26:24.4909 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:26:24.4909 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 20:26:24.4909 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 20:26:24.4909 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 20:26:24.4909 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 20:26:24.4909 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:26:24.4909 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 20:26:24.4909 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:26:24.4909 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 20:26:24.4909 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 20:26:24.4909 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 20:59:54.4121 Info Message Template Auto Format enabled
+2022-06-19 20:59:54.4327 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 20:59:54.4754 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 20:59:54.4754 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:59:54.4754 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:59:54.4754 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:59:54.4911 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:59:54.4911 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:59:54.4911 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:59:54.4911 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:59:54.4911 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:59:54.4911 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:59:54.4911 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:59:54.4911 Info Adding target FileTarget(Name=logfile)
+2022-06-19 20:59:54.4911 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 20:59:54.4911 Trace ParseRulesElement
+2022-06-19 20:59:54.5097 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 20:59:54.5097 Debug --- NLog configuration dump ---
+2022-06-19 20:59:54.5097 Debug Targets:
+2022-06-19 20:59:54.5097 Debug FileTarget(Name=logfile)
+2022-06-19 20:59:54.5097 Debug Rules:
+2022-06-19 20:59:54.5097 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 20:59:54.5097 Debug --- End of NLog configuration dump ---
+2022-06-19 20:59:54.5097 Trace FindReachableObject<System.Object>:
+2022-06-19 20:59:54.5097 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 20:59:54.5097 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 20:59:54.5097 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 20:59:54.5097 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 20:59:54.5097 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:59:54.5220 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:59:54.5220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5220 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:59:54.5220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5220 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 20:59:54.5220 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:59:54.5220 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:59:54.5220 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:59:54.5220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5220 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:59:54.5220 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5220 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:59:54.5220 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 20:59:54.5220 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 20:59:54.5220 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 20:59:54.5220 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 20:59:54.5220 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 20:59:54.5220 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 20:59:54.5220 Trace Initializing Layout Renderer: ${message}
+2022-06-19 20:59:54.5220 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:59:54.5220 Trace Initializing Layout Renderer: ${level}
+2022-06-19 20:59:54.5220 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:59:54.5220 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 20:59:54.5220 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 20:59:54.5371 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:59:54.5371 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:59:54.5371 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:59:54.5371 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 20:59:54.5371 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5371 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 20:59:54.5371 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5371 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 20:59:54.5371 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:59:54.5371 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 20:59:54.5371 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 20:59:54.5371 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 20:59:54.5371 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 20:59:54.5371 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:59:54.5371 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 20:59:54.5371 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5371 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 20:59:54.5371 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 20:59:54.5371 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 20:59:54.5371 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 20:59:54.5371 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 20:59:54.5371 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 20:59:54.5371 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 20:59:54.5371 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 20:59:54.5371 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 20:59:54.5371 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 20:59:54.5371 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 20:59:54.5371 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 21:06:58.4585 Info Message Template Auto Format enabled
+2022-06-19 21:06:58.4802 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 21:06:58.5275 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 21:06:58.5275 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:06:58.5275 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:06:58.5275 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:06:58.5386 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:06:58.5386 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:06:58.5386 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:06:58.5386 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:06:58.5386 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:06:58.5386 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:06:58.5386 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:06:58.5386 Info Adding target FileTarget(Name=logfile)
+2022-06-19 21:06:58.5386 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 21:06:58.5386 Trace ParseRulesElement
+2022-06-19 21:06:58.5541 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 21:06:58.5541 Debug --- NLog configuration dump ---
+2022-06-19 21:06:58.5541 Debug Targets:
+2022-06-19 21:06:58.5541 Debug FileTarget(Name=logfile)
+2022-06-19 21:06:58.5541 Debug Rules:
+2022-06-19 21:06:58.5541 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 21:06:58.5541 Debug --- End of NLog configuration dump ---
+2022-06-19 21:06:58.5541 Trace FindReachableObject<System.Object>:
+2022-06-19 21:06:58.5541 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 21:06:58.5541 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 21:06:58.5541 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:06:58.5541 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:06:58.5541 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:06:58.5541 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:06:58.5541 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5541 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:06:58.5541 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5541 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:06:58.5678 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:06:58.5678 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:06:58.5678 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:06:58.5678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5678 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:06:58.5678 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5678 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:06:58.5678 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:06:58.5678 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 21:06:58.5678 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 21:06:58.5678 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 21:06:58.5678 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 21:06:58.5678 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 21:06:58.5678 Trace Initializing Layout Renderer: ${message}
+2022-06-19 21:06:58.5678 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:06:58.5678 Trace Initializing Layout Renderer: ${level}
+2022-06-19 21:06:58.5678 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:06:58.5678 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 21:06:58.5678 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 21:06:58.5839 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:06:58.5839 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:06:58.5839 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:06:58.5839 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:06:58.5839 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5839 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:06:58.5839 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5839 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:06:58.5839 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:06:58.5839 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 21:06:58.5839 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:06:58.5839 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 21:06:58.5839 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:06:58.5839 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:06:58.5839 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:06:58.5839 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5839 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:06:58.5839 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:06:58.5839 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 21:06:58.5839 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 21:06:58.5839 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:06:58.5839 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:06:58.5839 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:06:58.5839 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:06:58.5839 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:06:58.5839 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:06:58.5839 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 21:06:58.5839 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 21:14:30.3076 Info Message Template Auto Format enabled
+2022-06-19 21:14:30.3309 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 21:14:30.3944 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 21:14:30.3968 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:14:30.3968 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:14:30.3968 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:14:30.3968 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:14:30.3968 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:14:30.3968 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:14:30.4122 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:14:30.4122 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:14:30.4122 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:14:30.4122 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:14:30.4122 Info Adding target FileTarget(Name=logfile)
+2022-06-19 21:14:30.4122 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 21:14:30.4122 Trace ParseRulesElement
+2022-06-19 21:14:30.4314 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 21:14:30.4314 Debug --- NLog configuration dump ---
+2022-06-19 21:14:30.4314 Debug Targets:
+2022-06-19 21:14:30.4314 Debug FileTarget(Name=logfile)
+2022-06-19 21:14:30.4314 Debug Rules:
+2022-06-19 21:14:30.4314 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 21:14:30.4314 Debug --- End of NLog configuration dump ---
+2022-06-19 21:14:30.4314 Trace FindReachableObject<System.Object>:
+2022-06-19 21:14:30.4314 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 21:14:30.4438 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 21:14:30.4438 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:14:30.4438 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:14:30.4438 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:14:30.4438 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:14:30.4438 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4438 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:14:30.4438 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4438 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:14:30.4438 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:14:30.4438 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:14:30.4438 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:14:30.4438 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4438 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:14:30.4438 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4438 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:14:30.4438 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:14:30.4438 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 21:14:30.4438 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 21:14:30.4438 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 21:14:30.4438 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 21:14:30.4608 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${message}
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${level}
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 21:14:30.4608 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 21:14:30.4608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:14:30.4608 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:14:30.4608 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:14:30.4608 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:14:30.4608 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4608 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:14:30.4608 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4608 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 21:14:30.4608 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:14:30.4608 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 21:14:30.4608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:14:30.4608 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:14:30.4608 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:14:30.4608 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4608 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:14:30.4608 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:14:30.4608 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 21:14:30.4751 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 21:14:30.4751 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:14:30.4751 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:14:30.4751 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:14:30.4751 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:14:30.4751 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:14:30.4751 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:14:30.4751 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 21:14:30.4751 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 21:38:43.1479 Info Message Template Auto Format enabled
+2022-06-19 21:38:43.1687 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 21:38:43.2122 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 21:38:43.2122 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:38:43.2122 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:38:43.2122 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:38:43.2122 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:38:43.2122 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:38:43.2122 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:38:43.2250 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:38:43.2250 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:38:43.2250 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:38:43.2250 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:38:43.2250 Info Adding target FileTarget(Name=logfile)
+2022-06-19 21:38:43.2250 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 21:38:43.2250 Trace ParseRulesElement
+2022-06-19 21:38:43.2250 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 21:38:43.2408 Debug --- NLog configuration dump ---
+2022-06-19 21:38:43.2408 Debug Targets:
+2022-06-19 21:38:43.2408 Debug FileTarget(Name=logfile)
+2022-06-19 21:38:43.2408 Debug Rules:
+2022-06-19 21:38:43.2408 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 21:38:43.2408 Debug --- End of NLog configuration dump ---
+2022-06-19 21:38:43.2408 Trace FindReachableObject<System.Object>:
+2022-06-19 21:38:43.2408 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 21:38:43.2408 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 21:38:43.2408 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:38:43.2408 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:38:43.2408 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:38:43.2408 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:38:43.2408 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2408 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:38:43.2408 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2408 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:38:43.2408 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:38:43.2408 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:38:43.2408 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:38:43.2408 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2408 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:38:43.2408 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2408 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:38:43.2408 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:38:43.2408 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 21:38:43.2555 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 21:38:43.2555 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 21:38:43.2555 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 21:38:43.2555 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${message}
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${level}
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 21:38:43.2555 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 21:38:43.2555 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:38:43.2555 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:38:43.2555 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:38:43.2555 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:38:43.2555 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2555 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:38:43.2555 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2555 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:38:43.2555 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 21:38:43.2714 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:38:43.2714 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 21:38:43.2714 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:38:43.2714 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:38:43.2714 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:38:43.2714 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2714 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:38:43.2714 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:38:43.2714 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 21:38:43.2714 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 21:38:43.2714 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:38:43.2714 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:38:43.2714 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:38:43.2714 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:38:43.2714 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:38:43.2714 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:38:43.2714 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 21:38:43.2714 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-06-19 21:40:58.0607 Info Message Template Auto Format enabled
+2022-06-19 21:40:58.0788 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-06-19 21:40:58.1196 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-06-19 21:40:58.1196 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:40:58.1196 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:40:58.1196 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:40:58.1196 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:40:58.1196 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:40:58.1311 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:40:58.1311 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:40:58.1311 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:40:58.1311 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:40:58.1311 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:40:58.1311 Info Adding target FileTarget(Name=logfile)
+2022-06-19 21:40:58.1311 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-06-19 21:40:58.1311 Trace ParseRulesElement
+2022-06-19 21:40:58.1311 Debug Watching file-filter 'nlog.config' in directory: C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage
+2022-06-19 21:40:58.1461 Debug --- NLog configuration dump ---
+2022-06-19 21:40:58.1461 Debug Targets:
+2022-06-19 21:40:58.1461 Debug FileTarget(Name=logfile)
+2022-06-19 21:40:58.1461 Debug Rules:
+2022-06-19 21:40:58.1461 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-06-19 21:40:58.1461 Debug --- End of NLog configuration dump ---
+2022-06-19 21:40:58.1461 Trace FindReachableObject<System.Object>:
+2022-06-19 21:40:58.1461 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-06-19 21:40:58.1461 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-06-19 21:40:58.1461 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:40:58.1461 Trace   Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:40:58.1461 Trace   Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:40:58.1461 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:40:58.1461 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1461 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:40:58.1461 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1461 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:40:58.1461 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:40:58.1461 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:40:58.1461 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:40:58.1461 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1461 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:40:58.1461 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1461 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:40:58.1461 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:40:58.1461 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-06-19 21:40:58.1461 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-06-19 21:40:58.1620 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\nlog.config
+2022-06-19 21:40:58.1620 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-06-19 21:40:58.1620 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${message}
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${level}
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${longdate}
+2022-06-19 21:40:58.1620 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-06-19 21:40:58.1620 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:40:58.1620 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:40:58.1620 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:40:58.1620 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-06-19 21:40:58.1620 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1620 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-06-19 21:40:58.1620 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1620 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${shortdate}
+2022-06-19 21:40:58.1620 Trace Initializing Layout Renderer: ${literal}
+2022-06-19 21:40:58.1620 Trace Initializing C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt
+2022-06-19 21:40:58.1620 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-06-19 21:40:58.1620 Trace Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:40:58.1620 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-06-19 21:40:58.1620 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1620 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-06-19 21:40:58.1620 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-06-19 21:40:58.1620 Trace Initializing FileTarget(Name=logfile)
+2022-06-19 21:40:58.1620 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-06-19 21:40:58.1620 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-06-19 21:40:58.1620 Trace  Scanning Property FileName 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt' NLog.Layouts
+2022-06-19 21:40:58.1620 Trace  Scanning SimpleLayout 'C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LoggerService\${shortdate}_logfile.txt'
+2022-06-19 21:40:58.1620 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-06-19 21:40:58.1620 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-06-19 21:40:58.1620 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-06-19 21:40:58.1782 Trace FileTarget(Name=logfile) has 2 layouts
+2022-06-19 21:40:58.1782 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory

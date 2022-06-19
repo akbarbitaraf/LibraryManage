@@ -1,4 +1,5 @@
-﻿using LibraryManage.Contract.IServices;
+﻿using AutoMapper;
+using LibraryManage.Contract.IServices;
 using LibraryManage.Entities.Context;
 using LibraryManage.Entities.DB;
 using LibraryManage.Entities.DTO;
@@ -10,17 +11,19 @@ namespace LibraryManage.Services
     public class AuthService : IAuthService
     {
         private readonly IRepositoryManager _repositoryManager;
-        private readonly LibraryManageContext _libraryManageContext; 
+        private readonly LibraryManageContext _libraryManageContext;
+        private readonly IMapper _mapper;
 
-        public AuthService(LibraryManageContext libraryManageContext)
+        public AuthService(LibraryManageContext libraryManageContext , IMapper mapper)
         {
             _libraryManageContext = libraryManageContext;
-            _repositoryManager = new RepositoryManager(_libraryManageContext); 
+            this._mapper = mapper;
+            _repositoryManager = new RepositoryManager(_libraryManageContext ,_mapper); 
         }
-        public Task<MemberLoginRes> Login(MemberLoginReq req)
+        public async Task<MemberLoginRes> Login(MemberLoginReq req)
         {
-           string userName = req.UserName;
-            string password = req.Password;
+           string userName = req.userName;
+            string password = req.password;
             if (string.IsNullOrWhiteSpace(userName))
             {
                 throw new Exception("UserName Is Empty");
@@ -29,10 +32,11 @@ namespace LibraryManage.Services
             { 
                 throw new Exception("Password Is Empty");
             }
-            var result = ((MemberLoginRepository)_repositoryManager.MemberLogin).FindAllCondition(a=>a.UserName == userName && a.Password ==password, false).ToList(); 
-           
 
-            return null; 
+            var result =  await _repositoryManager.MemberLogin.Login(userName,password);
+            var mapper = _mapper.Map<MemberLoginRes>(result);
+            return mapper;
+
 
         }
     }

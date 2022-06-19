@@ -10,7 +10,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "5678050d-9add-4f61-b782-b86fc135b96c": {
+      "ProjectGuid": "5678050d-9add-4f61-b782-b86fc135b96c",
+      "DisplayName": "LoggerService",
+      "ColorIndex": 1
+    },
+    "db51a397-518a-48da-af3e-edd73356a670": {
+      "ProjectGuid": "db51a397-518a-48da-af3e-edd73356a670",
+      "DisplayName": "LoggerService",
+      "ColorIndex": 2
+    },
+    "177e67af-b06a-4033-bc6d-7719ef74667c": {
+      "ProjectGuid": "177e67af-b06a-4033-bc6d-7719ef74667c",
+      "DisplayName": "LoggerService",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

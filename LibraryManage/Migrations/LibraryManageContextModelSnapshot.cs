@@ -451,21 +451,24 @@ namespace LibraryManage.Migrations
                     b.Property<bool>("Gender")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LastName")
+                    b.Property<string>("LastName")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("MemberAttachment_ID")
+                    b.Property<int?>("MemberAttachment_ID")
                         .HasColumnType("int");
 
                     b.Property<int>("MemberStatus_ID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PhoneNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Tel")
-                        .HasColumnType("int");
+                    b.Property<string>("Tel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
@@ -810,9 +813,7 @@ namespace LibraryManage.Migrations
                 {
                     b.HasOne("LibraryManage.Entities.DB.MembersAttachment", "MembersAttachment")
                         .WithMany()
-                        .HasForeignKey("MemberAttachment_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MemberAttachment_ID");
 
                     b.HasOne("LibraryManage.Entities.DB.MembersStatus", "MembersStatus")
                         .WithMany()
