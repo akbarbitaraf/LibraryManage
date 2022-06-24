@@ -1,4 +1,6 @@
-﻿using LibraryManage.Entities.Mapper;
+﻿using LibraryManage.Contract.IServices;
+using LibraryManage.Entities.DTO.JWT;
+using LibraryManage.Entities.Mapper;
 using LibraryManage.Extentions;
 using LibraryManage.Services;
 using LibraryManage.Services.Interfaces;
@@ -18,6 +20,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IJwtAuthManager, JwtAuthManager>();
+builder.Services.AddSingleton(Configuration.GetSection("JwtSettings").Get<JwtTokenConfig>());
 builder.Services.ConfigureJWT(Configuration); 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 
@@ -33,7 +37,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 
-//app.UseAuthorization();
+app.UseAuthorization();
 
 app.MapControllers();
 

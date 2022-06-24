@@ -8,9 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibraryManage.Controllers
 {
     [ApiController]
-    //[Authorize(Roles = "Members")]
+    [Authorize(Roles = "Employee")]
     [Route("api/[controller]")]
-    //[Authorize(Roles ="Memmber")]
     public class AuthController : Controller
     {
         private IAuthService _authService; 
@@ -20,13 +19,28 @@ namespace LibraryManage.Controllers
         }
         [AllowAnonymous]
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] MemberLoginReq returnUrl)
+        public async Task<IActionResult> Login([FromBody] EmployeeLoginReq returnUrl)
         {
             var result =await _authService.Login(returnUrl);
  
-            return Ok(returnUrl);
+            return Ok(result);
+        }
+        [AllowAnonymous]
+        [HttpPost("ResetPasswordWithoutLogin")]
+        public async Task<IActionResult> ResetPasswordWithoutLogin([FromBody] ResetPasswordWithoutLoginReq returnUrl)
+        {
+            var result = _authService.ResetPasswordLogin(returnUrl.Email, returnUrl.NewPassword);
+            return Ok(result);
         }
 
+        [HttpPut("ResetPasswordAfterLogin")]
+        public async Task<IActionResult> ResetPasswordAfterLogin([FromBody] ResetPasswordLoginReq returnUrl)
+        {
+            var email = User.Identity.Name;
+
+            var result = await _authService.ResetPasswordLogin(email,returnUrl.NewPassword);  
+            return Ok(result);
+        }
 
     }
 }

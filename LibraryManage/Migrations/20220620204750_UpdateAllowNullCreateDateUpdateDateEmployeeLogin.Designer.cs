@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryManage.Migrations
 {
     [DbContext(typeof(LibraryManageContext))]
-    [Migration("20220425202301_memberlogintable")]
-    partial class memberlogintable
+    [Migration("20220620204750_UpdateAllowNullCreateDateUpdateDateEmployeeLogin")]
+    partial class UpdateAllowNullCreateDateUpdateDateEmployeeLogin
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -295,6 +295,38 @@ namespace LibraryManage.Migrations
                     b.ToTable("Configurations");
                 });
 
+            modelBuilder.Entity("LibraryManage.Entities.DB.EmployeeLogin", b =>
+                {
+                    b.Property<int>("EmployeeLogin_ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeLogin_ID"), 1L, 1);
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Employee_ID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EmployeeLogin_ID");
+
+                    b.HasIndex("Employee_ID");
+
+                    b.ToTable("EmployeeLogins");
+                });
+
             modelBuilder.Entity("LibraryManage.Entities.DB.Employees", b =>
                 {
                     b.Property<int>("Employee_ID")
@@ -302,6 +334,15 @@ namespace LibraryManage.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Employee_ID"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("EmployeeRole_ID")
                         .HasColumnType("int");
@@ -313,7 +354,18 @@ namespace LibraryManage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Gender")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mobile")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -393,38 +445,6 @@ namespace LibraryManage.Migrations
                     b.ToTable("Libraries");
                 });
 
-            modelBuilder.Entity("LibraryManage.Entities.DB.MemberLogin", b =>
-                {
-                    b.Property<int>("MemberLogin_ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MemberLogin_ID"), 1L, 1);
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Member_ID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("MemberLogin_ID");
-
-                    b.HasIndex("Member_ID");
-
-                    b.ToTable("MemberLogins");
-                });
-
             modelBuilder.Entity("LibraryManage.Entities.DB.Members", b =>
                 {
                     b.Property<int>("Member_ID")
@@ -453,21 +473,24 @@ namespace LibraryManage.Migrations
                     b.Property<bool>("Gender")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LastName")
+                    b.Property<string>("LastName")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("MemberAttachment_ID")
+                    b.Property<int?>("MemberAttachment_ID")
                         .HasColumnType("int");
 
                     b.Property<int>("MemberStatus_ID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PhoneNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Tel")
-                        .HasColumnType("int");
+                    b.Property<string>("Tel")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
@@ -782,6 +805,17 @@ namespace LibraryManage.Migrations
                     b.Navigation("Libraries");
                 });
 
+            modelBuilder.Entity("LibraryManage.Entities.DB.EmployeeLogin", b =>
+                {
+                    b.HasOne("LibraryManage.Entities.DB.Employees", "Employees")
+                        .WithMany()
+                        .HasForeignKey("Employee_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employees");
+                });
+
             modelBuilder.Entity("LibraryManage.Entities.DB.Employees", b =>
                 {
                     b.HasOne("LibraryManage.Entities.DB.EmployeesRoles", "EmployeesRoles")
@@ -797,24 +831,11 @@ namespace LibraryManage.Migrations
                     b.Navigation("EmployeesStatus");
                 });
 
-            modelBuilder.Entity("LibraryManage.Entities.DB.MemberLogin", b =>
-                {
-                    b.HasOne("LibraryManage.Entities.DB.Members", "Members")
-                        .WithMany()
-                        .HasForeignKey("Member_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Members");
-                });
-
             modelBuilder.Entity("LibraryManage.Entities.DB.Members", b =>
                 {
                     b.HasOne("LibraryManage.Entities.DB.MembersAttachment", "MembersAttachment")
                         .WithMany()
-                        .HasForeignKey("MemberAttachment_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MemberAttachment_ID");
 
                     b.HasOne("LibraryManage.Entities.DB.MembersStatus", "MembersStatus")
                         .WithMany()

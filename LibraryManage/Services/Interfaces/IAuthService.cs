@@ -4,6 +4,8 @@ namespace LibraryManage.Services.Interfaces
 {
     public interface IAuthService 
     {
-        Task<MemberLoginRes> Login(MemberLoginReq req);
+        Task<EmployeeLoginRes> Login(EmployeeLoginReq req);
+        Task<string> ResetPasswordLogin(string email, string newPassword);
+        Task<string> ResetPasswordAfterLogin(ResetPasswordLoginReq req, string email);
     }
 }

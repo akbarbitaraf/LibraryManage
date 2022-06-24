@@ -2,7 +2,7 @@
 {
     public interface IRepositoryManager
     {
-        IMemberLoginRepository MemberLogin{ get; }
+        IAuthRepository AuthRepository{ get; }
         void Save(); 
 
     }

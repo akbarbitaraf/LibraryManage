@@ -8,9 +8,9 @@ namespace LibraryManage.Entities.Mapper
     {
         public AutoMapperProfile()
         {
-            CreateMap<MemberLogin, MemberLoginRes>()
+            CreateMap<EmployeeLogin, EmployeeLoginRes>()
                 .ForMember(x =>x.userName, a => a.MapFrom(y => y.UserName))
-                .ForMember(x=>x.memberId , a=>a.MapFrom(y=>y.Member_ID))
+                .ForMember(x=>x.employeeId , a=>a.MapFrom(y=>y.Employee_ID))
                 ; 
         }
     }

@@ -250,14 +250,14 @@ namespace LibraryManage.Migrations
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     FirstName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    LastName = table.Column<int>(type: "int", maxLength: 50, nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     EmailAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<int>(type: "int", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Gender = table.Column<bool>(type: "bit", nullable: false),
-                    Tel = table.Column<int>(type: "int", nullable: true),
+                    Tel = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MemberStatus_ID = table.Column<int>(type: "int", nullable: false),
-                    MemberAttachment_ID = table.Column<int>(type: "int", nullable: false)
+                    MemberAttachment_ID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -266,8 +266,7 @@ namespace LibraryManage.Migrations
                         name: "FK_Members_MembersAttachment_MemberAttachment_ID",
                         column: x => x.MemberAttachment_ID,
                         principalTable: "MembersAttachment",
-                        principalColumn: "MemberAttachment_ID",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "MemberAttachment_ID");
                     table.ForeignKey(
                         name: "FK_Members_MembersStatus_MemberStatus_ID",
                         column: x => x.MemberStatus_ID,
@@ -301,6 +300,29 @@ namespace LibraryManage.Migrations
                         column: x => x.Translator_ID,
                         principalTable: "Translators",
                         principalColumn: "Translator_ID");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EmployeeLogins",
+                columns: table => new
+                {
+                    EmployeeLogin_ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Employee_ID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EmployeeLogins", x => x.EmployeeLogin_ID);
+                    table.ForeignKey(
+                        name: "FK_EmployeeLogins_Employees_Employee_ID",
+                        column: x => x.Employee_ID,
+                        principalTable: "Employees",
+                        principalColumn: "Employee_ID",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -563,6 +585,11 @@ namespace LibraryManage.Migrations
                 column: "Library_ID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_EmployeeLogins_Employee_ID",
+                table: "EmployeeLogins",
+                column: "Employee_ID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Employees_EmployeeRole_ID",
                 table: "Employees",
                 column: "EmployeeRole_ID");
@@ -623,6 +650,9 @@ namespace LibraryManage.Migrations
 
             migrationBuilder.DropTable(
                 name: "Configurations");
+
+            migrationBuilder.DropTable(
+                name: "EmployeeLogins");
 
             migrationBuilder.DropTable(
                 name: "Transactions");

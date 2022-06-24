@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Security.Claims;
+using AutoMapper;
 using LibraryManage.Contract.IServices;
 using LibraryManage.Entities.Context;
 using LibraryManage.Entities.DB;
@@ -13,14 +14,16 @@ namespace LibraryManage.Services
         private readonly IRepositoryManager _repositoryManager;
         private readonly LibraryManageContext _libraryManageContext;
         private readonly IMapper _mapper;
+        private readonly IJwtAuthManager _jwtAuthManager;
 
-        public AuthService(LibraryManageContext libraryManageContext , IMapper mapper)
+        public AuthService(LibraryManageContext libraryManageContext , IMapper mapper , IJwtAuthManager jwtAuthManager)
         {
             _libraryManageContext = libraryManageContext;
             this._mapper = mapper;
+            this._jwtAuthManager = jwtAuthManager;
             _repositoryManager = new RepositoryManager(_libraryManageContext ,_mapper); 
         }
-        public async Task<MemberLoginRes> Login(MemberLoginReq req)
+        public async Task<EmployeeLoginRes> Login(EmployeeLoginReq req)
         {
            string userName = req.userName;
             string password = req.password;
@@ -33,11 +36,57 @@ namespace LibraryManage.Services
                 throw new Exception("Password Is Empty");
             }
 
-            var result =  await _repositoryManager.MemberLogin.Login(userName,password);
-            var mapper = _mapper.Map<MemberLoginRes>(result);
+            var result =  await _repositoryManager.AuthRepository.Login(userName,password);
+            if(result is null)
+            {
+                throw new Exception("Not Found User , Try Again"); 
+            }
+            var claims = new[]
+                        {
+                    new Claim(ClaimTypes.Name, result.EmployeeLogin_ID.ToString()),
+                    new Claim(ClaimTypes.Role, "Employee")
+            };
+            var jwtresult = _jwtAuthManager.GenerateTokens(result.UserName, claims, DateTime.UtcNow);
+
+            var mapper = _mapper.Map<EmployeeLoginRes>(result);
+            mapper.accessToken = jwtresult.access_token; 
+
             return mapper;
 
 
+        }
+
+        public Task<string> ResetPasswordAfterLogin(ResetPasswordLoginReq req, string email)
+        {
+
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                throw new Exception("Email is  Empty");
+            }
+            if (string.IsNullOrWhiteSpace(req.CurrentPassword) || string.IsNullOrWhiteSpace(req.NewPassword))
+            {
+                throw new Exception("Password is Empty");
+            }
+            if (req.CurrentPassword == req.NewPassword)
+            {
+                throw new Exception("This Password has been used before");
+            }
+            var result = _repositoryManager.AuthRepository.ResetPasswordAfterLogin(req,email);
+            return result;
+        }
+
+        public Task<string> ResetPasswordLogin(string email, string newPassword)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                throw new Exception("Email is  Empty"); 
+            }
+            if (string.IsNullOrWhiteSpace(newPassword))
+            {
+                throw new Exception("Password is Empty"); 
+            }
+            var result = _repositoryManager.AuthRepository.ResetPasswordLogin(email, newPassword);
+            return result;
         }
     }
 }

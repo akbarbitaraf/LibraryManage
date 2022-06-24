@@ -67,3 +67,4 @@ C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6
 C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6.0\LoggerService.pdb
 C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Bitaraf.Eng\Documents\GitHub\LibraryManage\LibraryManage\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

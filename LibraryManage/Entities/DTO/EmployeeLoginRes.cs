@@ -1,12 +1,9 @@
 ﻿namespace LibraryManage.Entities.DTO
 {
-    public class MemberLoginRes
+    public class EmployeeLoginRes
     {
-        public MemberLoginRes()
-        {
-
-        }
-        public long memberId { get; set; }
+      
+        public long employeeId { get; set; }
         public string accessToken { get; set; }
         public string userName { get; set; }
 
