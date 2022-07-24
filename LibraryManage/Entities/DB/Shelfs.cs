@@ -13,5 +13,7 @@ namespace LibraryManage.Entities.DB
         public int? Area_ID { get; set; }    
         [ForeignKey("Area_ID")]
         public Areas Areas { get; set; }
+        public string Description { get; set; }
+
     }
 }

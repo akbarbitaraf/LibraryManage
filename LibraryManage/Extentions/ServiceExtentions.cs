@@ -2,6 +2,8 @@
 using LibraryManage.Entities.Context;
 using LibraryManage.Entities.DTO.JWT;
 using LibraryManage.Repository;
+using LibraryManage.Services;
+using LibraryManage.Services.Interfaces;
 using LoggerService;
 using LoggerService.Contrancts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -24,7 +26,22 @@ namespace LibraryManage.Extentions
             services.AddDbContext<LibraryManageContext>(opts =>
             opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"),b=>b.MigrationsAssembly("LibraryManage")));
 
-        public static void ConfigureRepositoryManager(this IServiceCollection services) => services.AddScoped<IRepositoryManager , RepositoryManager>();
+        public static void ConfigureRepository(this IServiceCollection services) {
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+            services.AddScoped<IOperationRepository, OperationRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
+
+        }
+        public static void ConfigureServices(this IServiceCollection services)
+        {
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IOperationService, OperationService>();
+            services.AddScoped<IEmployeesService , EmployeesService>();
+            services.AddScoped<IJwtAuthManager, JwtAuthManager>();
+
+
+        }
         public static void ConfigureLoggertService(this IServiceCollection services) => services.AddScoped<ILoggerManager, ILoggerManager>();
         public static void ConfigureJWT(this IServiceCollection services , IConfiguration configuration) {
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtTokenConfig>();

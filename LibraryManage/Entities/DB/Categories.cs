@@ -8,7 +8,7 @@ namespace LibraryManage.Entities.DB
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Category_ID { get; set; }
-        public string Title { get; set; }   
+        public string CategoryName { get; set; }   
         
     }
 }

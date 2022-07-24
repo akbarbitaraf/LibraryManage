@@ -12,13 +12,13 @@ namespace LibraryManage.Entities.DB
         [StringLength(50)]
         public string AuthorFirstName { get; set; }
         public string AuthorLastName { get; set; }
-        public Boolean AuthorGender { get; set; }
-        public int? Translator_ID { get; set; }
-        [ForeignKey("Translator_ID")]
-        public Translators Translators { get; set; }    
-        public int? Publisher_ID { get; set; }   
-        [ForeignKey("Publisher_ID")]
-        public Publishers Publishers { get; set; }  
+        public bool AuthorGender { get; set; }
+        //public int? Translator_ID { get; set; }
+        //[ForeignKey("Translator_ID")]
+        //public Translators Translators { get; set; }    
+        //public int? Publisher_ID { get; set; }   
+        //[ForeignKey("Publisher_ID")]
+        //public Publishers Publishers { get; set; }  
 
              
 

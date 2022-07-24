@@ -65,17 +65,7 @@ namespace LibraryManage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Publisher_ID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Translator_ID")
-                        .HasColumnType("int");
-
                     b.HasKey("Author_ID");
-
-                    b.HasIndex("Publisher_ID");
-
-                    b.HasIndex("Translator_ID");
 
                     b.ToTable("Authors");
                 });
@@ -253,7 +243,7 @@ namespace LibraryManage.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Category_ID"), 1L, 1);
 
-                    b.Property<string>("Title")
+                    b.Property<string>("CategoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -384,7 +374,11 @@ namespace LibraryManage.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeRole_ID"), 1L, 1);
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ERTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -400,6 +394,10 @@ namespace LibraryManage.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeStatus_ID"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ESTitle")
                         .IsRequired()
@@ -535,6 +533,10 @@ namespace LibraryManage.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MSTitle")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -578,7 +580,7 @@ namespace LibraryManage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PublisheAddress")
+                    b.Property<string>("PublisherAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -597,6 +599,10 @@ namespace LibraryManage.Migrations
 
                     b.Property<int?>("Area_ID")
                         .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -679,12 +685,24 @@ namespace LibraryManage.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Translator_ID"), 1L, 1);
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Gender")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mobile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Translator_ID");
@@ -699,21 +717,6 @@ namespace LibraryManage.Migrations
                         .HasForeignKey("Library_ID");
 
                     b.Navigation("Libraries");
-                });
-
-            modelBuilder.Entity("LibraryManage.Entities.DB.Authors", b =>
-                {
-                    b.HasOne("LibraryManage.Entities.DB.Publishers", "Publishers")
-                        .WithMany()
-                        .HasForeignKey("Publisher_ID");
-
-                    b.HasOne("LibraryManage.Entities.DB.Translators", "Translators")
-                        .WithMany()
-                        .HasForeignKey("Translator_ID");
-
-                    b.Navigation("Publishers");
-
-                    b.Navigation("Translators");
                 });
 
             modelBuilder.Entity("LibraryManage.Entities.DB.BookLoans", b =>

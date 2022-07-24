@@ -9,6 +9,7 @@ namespace LibraryManage.Controllers
     [Route("api/[controller]")]
     public class MembersController : Controller
     {
+
         [HttpPost("RegisterMember")]
         public async Task<IActionResult> RegisterMember()
         {
@@ -19,6 +20,7 @@ namespace LibraryManage.Controllers
         {
             return Ok(0);
         }
+   
 
 
     }

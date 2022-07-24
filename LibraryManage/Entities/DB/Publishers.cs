@@ -11,7 +11,7 @@ namespace LibraryManage.Entities.DB
         public int Publisher_ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string PublisheAddress { get; set; }
+        public string PublisherAddress { get; set; }
 
 
     }

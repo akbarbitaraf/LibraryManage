@@ -12,16 +12,14 @@ namespace LibraryManage.Services
     public class AuthService : IAuthService
     {
         private readonly IRepositoryManager _repositoryManager;
-        private readonly LibraryManageContext _libraryManageContext;
         private readonly IMapper _mapper;
         private readonly IJwtAuthManager _jwtAuthManager;
 
-        public AuthService(LibraryManageContext libraryManageContext , IMapper mapper , IJwtAuthManager jwtAuthManager)
+        public AuthService(IRepositoryManager repositoryManager, IMapper mapper, IJwtAuthManager jwtAuthManager)
         {
-            _libraryManageContext = libraryManageContext;
             this._mapper = mapper;
             this._jwtAuthManager = jwtAuthManager;
-            _repositoryManager = new RepositoryManager(_libraryManageContext ,_mapper); 
+            _repositoryManager = repositoryManager;
         }
         public async Task<EmployeeLoginRes> Login(EmployeeLoginReq req)
         {

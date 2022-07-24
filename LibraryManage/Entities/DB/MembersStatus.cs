@@ -10,6 +10,8 @@ namespace LibraryManage.Entities.DB
         [Required]
         [StringLength(100)]
         public string MSTitle { get; set; }
-        
+        public string Description { get; set; }
+
+
     }
 }

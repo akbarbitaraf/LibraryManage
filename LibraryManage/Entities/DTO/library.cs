@@ -1,6 +1,6 @@
 ﻿namespace LibraryManage.Entities.DTO
 {
-    public class SubmitLibraryreq
+    public class library
     {
     }
 }

@@ -32,6 +32,7 @@ namespace LibraryManage.Controllers
             var result = _authService.ResetPasswordLogin(returnUrl.Email, returnUrl.NewPassword);
             return Ok(result);
         }
+      //  [Authorize(Roles = "Employee")]
 
         [HttpPut("ResetPasswordAfterLogin")]
         public async Task<IActionResult> ResetPasswordAfterLogin([FromBody] ResetPasswordLoginReq returnUrl)

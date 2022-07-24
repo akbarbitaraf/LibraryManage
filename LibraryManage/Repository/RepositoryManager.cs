@@ -7,13 +7,14 @@ namespace LibraryManage.Repository
     public class RepositoryManager : IRepositoryManager
     {
         private LibraryManageContext _libraryManageContext;
-        private readonly IMapper _mapper;
         private IAuthRepository _AuthRepository;
+        private IOperationRepository _OperationRepository;
+        private IEmployeeRepository _EmployeeRepository;
+       
 
-        public RepositoryManager(LibraryManageContext libraryManageContext , IMapper mapper)
+        public RepositoryManager(LibraryManageContext libraryManageContext)
         {
             _libraryManageContext = libraryManageContext;
-            this._mapper = mapper;
         }
         public IAuthRepository AuthRepository
         { 
@@ -21,6 +22,29 @@ namespace LibraryManage.Repository
                     _AuthRepository = new AuthRepository(_libraryManageContext); 
     return _AuthRepository;
                         }
+        }
+
+        public IOperationRepository operationRepository {
+
+            get
+            {
+                if (_OperationRepository == null)
+                    _OperationRepository = new OperationRepository(_libraryManageContext);
+                return _OperationRepository;
+
+            }
+
+        }
+
+        public IEmployeeRepository employeeRepository
+        {
+            get
+            {
+                if (_EmployeeRepository == null) _EmployeeRepository = new EmployeeRepository(_libraryManageContext);
+                return (_EmployeeRepository);
+
+               
+            }
         }
 
         public void Save() => _libraryManageContext.SaveChanges();

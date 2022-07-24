@@ -9,7 +9,8 @@ namespace LibraryManage.Entities.DB
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EmployeeRole_ID { get; set; }
-        public string Title { get; set; }   
+        public string ERTitle { get; set; }
+        public string Description { get; set; }
 
 
     }

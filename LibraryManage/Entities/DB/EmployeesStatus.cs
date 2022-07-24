@@ -9,6 +9,7 @@ namespace LibraryManage.Entities.DB
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EmployeeStatus_ID { get; set; }
         public string ESTitle { get; set; }
+        public string Description { get; set; }
 
     }
 }
